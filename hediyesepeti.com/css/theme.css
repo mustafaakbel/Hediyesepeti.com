@@ -1,0 +1,1624 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background: #f6f6f6;
+}
+a {
+	text-decoration: none;
+}
+#header{
+	width: 100%;
+	height: 111px;
+	background: red;
+}
+#header > #top{
+	width: 100%;
+	height: 56px;
+	padding-top: 10px;
+	background: #e0e0e1;
+}
+#header > #top > #container {
+	width: 1170px;
+	background: yellow;
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#header > #top > #container > a > #logo {
+	width: 259px;
+	height: 40px;
+	background: #e0e0e1;
+	background-image: url("../images/header/logo.png");
+	float: left;
+	background-repeat: no-repeat;
+}
+#header > #top > #container > #searchbox {
+	width: 483px;
+	height: 39px;
+	float: left;
+	background: white;
+}
+#header > #top > #container > #searchbox input[type="text"] {
+	width: 410px;
+    height: 39px;
+    padding: 5px 82px 5px 10px;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+    color: #939598;
+    outline: none;
+    float:left;
+}
+#header > #top > #container > #searchbox input[type="submit"]{
+	width: 72px;
+	height: 36px;
+	border : 0px;
+	background: #fe6500;
+	float:left;
+    margin-top: 1px;
+    display: inline-block;
+    font-size: 16px;
+    height: auto;
+    line-height: 35.5px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#header > #top > #container > #user-login {
+	width: 271px;
+	height: 46px;
+	float: right;
+}
+#header > #top > #container > #user-login > #help {
+	width: 81px;
+	height: 45px;
+	float: left;
+    margin: 2px 15px 0 0;
+    font: 700 14px/44px 'Open Sans';
+    padding: 0 5px 0 12px;
+    color: #575757;
+    font-weight: bold;
+}
+#header > #top > #container > #user-login > #help .help_icon {
+	width: 81px;
+	height: 17px;
+	float: left;
+	margin-top: -42px;
+	margin-left: 37px;
+	background: url("../images/header/que-mark.png");
+	background-repeat: no-repeat;
+}
+#header > #top > #container > #user-login > #help:hover {
+    background: #eee;
+}
+#header > #top > #container > #user-login > #help:hover .help_icon {
+	background: url("../images/header/que-mark.png");
+	background-repeat: no-repeat;
+	background-position: 0px -17px;
+}
+#header > #top > #container > #user-login > #help_info {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: yellow;
+	display: none;
+	margin-top: 45px;
+	margin-left: -52px;
+
+}
+#header > #top > #container > #user-login > #giris {
+	width: 50px;
+	height: 45px;
+	float: left;
+	font: 700 14px/44px 'Open Sans';
+	padding-left: 40px;
+	color: #575757;
+	font-weight: bold;
+	margin-right: 12px;
+	display: block;
+}
+
+.ge {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+.ge form label{
+	padding-left: 15px;
+	display: block;
+	margin-top: 10px;
+}
+.ge form > #form_grup{
+	margin-bottom: 15px!important;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+    background: #fff;
+    border:1px solid #ddd;
+    padding: 10px;
+
+}
+.ge form > #giris_yap_form{
+	margin-bottom: 15px!important;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+    background: #fff;
+    border:1px solid #ddd;
+    display: none;
+
+}
+
+.kontrol {
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin-bottom: 10px;
+}
+.ge form > #form_grup a{
+	text-decoration: none;
+	color : #333;
+}
+.ge form input[type='checkbox']{
+	margin-bottom: 25px;
+}
+.ge form #giris_yap_buton {
+	height: 85px;
+    display: none;
+}
+.ge > form #giris_yap_buton input[type='submit']{
+	width: 90%;
+    float: left;
+    font: 700 21px/21px "open sans";
+    color: #fff;
+    padding: 15px 0;
+    border: 0;
+    text-align: center;
+    background: #fe6500;
+    border-bottom: none;
+    border-radius: 6px;
+    margin:15px 5% 15px 5%;
+}
+.ge > form #gonderme{
+	background: white;
+	height: 85px;
+}
+.ge > form #gonderme input[type='submit']{
+	width: 90%;
+    float: left;
+    font: 700 21px/21px "open sans";
+    color: #fff;
+    padding: 15px 0;
+    border: 0;
+    text-align: center;
+    background: #fe6500;
+    border-bottom: none;
+    border-radius: 6px;
+    margin:15px 5% 15px 5%;
+}
+.ge form input[type='submit']:hover{
+	background: #e45d04;
+}
+.giris_ekrani_icerik {
+    background-color: #fefefe;
+    margin: 0 auto -10px auto;
+    border: 1px solid #888;
+    border-bottom: 0px;
+    padding-bottom: 25px;
+    width: 37%;
+}
+.giris_yap {
+    background-color: #fefefe;
+    margin: -31px auto 0 auto;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    width: 37%; 
+     height: auto;
+}
+.uye {
+    height: 500px;
+    display: block;
+    
+}
+.giris {
+    margin-top:10px;
+    display: block;
+
+}
+.giris_yap form input[type="giris_mail"] {
+    margin-top: 50px;
+}
+.animasyon {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.hesabim {
+	width: 65px;
+	height: 45px;
+	float: left;
+	font: 700 14px/44px 'Open Sans';
+	padding-left: 40px;
+	color: #575757;
+	font-weight: bold;
+	margin-right: 12px;
+	display: block;
+}
+.hesabim:hover {
+	color: #575757;
+	background-color: #eee;
+}
+.hesabim:hover .giris_icon {
+	background: url("../images/header/user_hover.png");
+	background-repeat: no-repeat;
+}
+.hesabim_ic {
+	width: 135px;
+	display: none;
+	position: absolute;
+	margin-left: -42px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    border-bottom: 3px solid #fe6500;
+    background-color: #eee;
+    z-index: 999;
+}
+.hesabim_ic ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.hesabim_ic li {
+    border-bottom: 1px solid #666;
+    padding-left: 5px;
+}
+.hesabim > .hesabim_ic a {
+	text-decoration: none;
+	width: 135px;
+	color: #575757;
+	font: 14px 'Open Sans';
+}
+.hesabim > .hesabim_ic a:hover {
+	text-decoration: underline;
+	color:#fe6500;
+
+}
+.hesabim:hover  .hesabim_ic{
+	display: block;
+}
+
+.giris_icon {
+	width: 32px;
+	height: 45px;
+	margin-left: -35px;
+	float: left;
+	background: url("../images/header/user.png");
+	margin-top: 5px;
+	background-repeat: no-repeat;
+}
+#header > #top > #container > #user-login > #giris:hover .giris_icon {
+	background: url("../images/header/user_hover.png");
+	background-repeat: no-repeat;
+}
+#header > #top > #container > #user-login > #giris:hover {
+	color: #575757;
+	background-color: #eee;
+}
+#header > #top > #container > #user-login > a > #sepet {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin-left: 5px;
+	background-image: url("../images/header/cartbg.png");
+	background-repeat: no-repeat;
+}
+#header > #top > #container > #user-login > a > #sepet span{
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 13px;
+    font-weight: bold;
+}
+#header > #top > #container > #user-login > a {
+    color:black;
+}
+#header > #bottom {
+	width: 100%;
+	height: auto;
+	background: #575757;
+}
+#header > #bottom > #container{
+	width: 1170px;
+	height: 47px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header > #bottom > #container   ul {
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+    padding: 0;
+}
+#header > #bottom > #container   li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    border:none;
+    width: 240px;
+}
+#header > #bottom > #container  li>a{
+    color:white;
+    text-decoration: none;
+    padding :13px 36px;
+    display: block;
+}
+#header > #bottom > #container   li:hover>a{
+    background: white;
+    color: #f60;
+    border-bottom: 1px solid gray;
+}
+#header > #bottom > #container   ul > li > ul{
+    position: absolute;
+    display: none;
+    z-index: 99999;
+}
+#header > #bottom > #container  ul > li:hover > ul{
+    display: block;
+    z-index: 99999;
+}
+#header > #bottom > #container  ul > li > ul  li {
+    display: none;
+    text-align: left;
+
+}
+#header > #bottom > #container   ul > li:hover > ul  li {
+    display: block;
+}
+#header > #bottom > #container   ul > li:hover > ul  li a{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 8px 12px;
+    height: auto;
+    color: #575757;
+    background: white;
+    border-right: 1px solid gray;
+}
+#header > #bottom > #container  ul > li:hover > ul  li:hover a{
+    background: #f2f2f2;
+    border-bottom: 0;
+}
+#header > #bottom > #container   ul > li > ul  li > ul {
+    position: absolute;
+    width: 100%;
+    background: white;
+    left: 265px;
+    display: none;
+    top: 0;
+    margin: 0;
+    bottom: 0;
+    z-index: 99999;
+}
+
+#header > #bottom > #container  ul > li:hover > ul li:hover >ul li  a{
+    background: white;
+    color: #93959d;
+    width: 81%;
+    font-size: 13px;
+    border:0px;
+}
+#header > #bottom > #container   ul > li > ul li:hover >ul li:hover  a{
+    color: orange;
+    text-decoration: underline;
+}
+
+#content{
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content > #slider{
+	width: 100%;
+    margin-top: -15px;
+
+}
+#content > #slider .sol{
+float: left;
+margin-right: 50px;
+}
+#content > #slider .sol .ust{
+margin-top: 50px;
+margin-bottom: 10px;
+}
+#content > #slider .sol .alt{
+
+}
+#content > #slider .sag{
+
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+#content > #sic h2{
+	font-family: 'Open Sans',"Times New Roman",Times,serif;
+    position: relative;
+    font-size: 29px;
+    color: #F90;
+    margin: 10px 0 15px;
+    font-weight: 700;
+}
+#content > #sic > #urun_slider{
+	width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	position: relative;
+}
+#content > #sic > #urun_slider > #left_button{
+	background: url("../images/content/sic/bx-slider_left_arrow.png") no-repeat 0 0;
+	position: absolute;
+    top: 50%;
+    outline: 0;
+    width: 32px;
+    height: 30px;
+    left: -32px;
+}
+#content > #sic > #urun_slider > #right_button{
+    background: url("../images/content/sic/bx-slider_right_arrow.png") no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 30px;
+    text-indent: -9999px;
+    z-index: 9!important;
+    right: -32px;
+}
+.urun_sablon{
+
+}
+.urun_sablon ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.urun_sablon figure{
+	margin: 0;
+}
+.urun_sablon ul li {
+
+    width: 274px; 
+    margin: 0 5px 15px 0;
+    border: 1px solid #CCC;
+    background-color: #FFF!important; 
+    display: inline-block;
+}
+.urun_sablon ul li figure a{
+	width: 233px;
+    cursor: pointer;
+    background-color: #FFF!important;
+}
+.urun_sablon figure img{
+	height: auto;
+    border-bottom: 0;
+    width: 100%;
+}
+.urun_sablon figure figcaption {
+	position: relative;
+    padding: 10px 10px 4px;
+    vertical-align: middle;
+    display: block;
+    text-align: center;
+    font-family: 'Open Sans',"Times New Roman",Times,serif;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #333;
+    background-color: #FFF;
+    width: 233px;
+    height: 52px;
+}
+.urun_sablon ul li .yildiz {
+	text-align: center;
+    height: 25px;
+}
+.urun_sablon ul li .ucret {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans',"Times New Roman",Times,serif;
+    font-size: 2em;
+    color: #333;
+    bottom: 6px;
+}
+.urun_sablon ul li .ucret sub {
+	font-size: .5em;
+    bottom: .5em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.urun_sablon ul li:hover  {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    border: 1px solid #bdaa9d;	
+}
+#content > #eb{
+	width:1170px;
+}
+#content > #eb h2{
+	font-family: 'Open Sans',"Times New Roman",Times,serif;
+    position: relative;
+    font-size: 29px;
+    color: #F90;
+    margin: 10px 0 15px;
+    font-weight: 700;
+    float: left;
+}
+#content > #eb >  .eb_link{
+	text-decoration: none;
+	color:black;
+	padding-top: 25px;
+    float: left;
+    padding-left: 10px;
+}
+.clear {
+	clear :both;
+}
+#content > #yu h2{
+	font-family: 'Open Sans',"Times New Roman",Times,serif;
+    position: relative;
+    font-size: 29px;
+    color: #F90;
+    margin: 10px 0 15px;
+    font-weight: 700;
+    float: left;
+}
+#content > #yu >  .yu_link{
+	text-decoration: none;
+	color:black;
+	padding-top: 25px;
+    float: left;
+    padding-left: 10px;
+}
+#footer{
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 350px; 	
+	position: relative;
+}
+#footer .footer_baslik{
+	float: left;
+    width: 100%;
+    background: url(../images/footer/border-img.jpg) repeat-x;
+    background-position: center center;
+    padding: 0 0 15px;
+    font: 700 15px 'Open Sans';
+    color: #58595b;
+    text-align: center;
+}
+#footer .footer_baslik span{
+	display: inline-block;
+    background: #f6f6f6;
+    margin: 11px 0 0;
+    padding: 0 35px;
+}
+#footer > #footer_left{
+	width: 35%;
+	float:left;
+}
+#footer > #footer_right{
+	width: 37%;
+	float:right;
+}
+#footer > #footer_left ul{
+	float: left;
+	width: 50%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#footer > #footer_left ul li {
+	float: left;
+    width: 100%;
+    margin: 0 0 5px;
+}
+#footer > #footer_left ul li a{
+	font: 400 14px 'Open Sans';
+    color: #58595b;
+    text-decoration: none;
+}
+#footer > #footer_left ul li:hover a{
+   text-decoration: underline;
+}
+#footer > #footer_right ul{
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+#footer > #footer_right ul li {
+    width: 45%;
+    margin: 0 10px 15px 0;
+    float:left;
+}
+#footer > #footer_right ul li a img{
+    float: left;
+    margin: 0 15px 0 0;
+}
+#footer > #footer_right ul li a{
+	font: 400 14px 'Open Sans';
+    color: #58595b;
+    text-decoration: none;
+}
+#footer > #footer_right ul li:hover a{
+   text-decoration: underline;
+}
+#footer > #blog{
+	float: left;
+	width: 17%;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+#footer > #blog img{
+    float: left;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+#footer > #blog a{
+    font: 400 14px 'Open Sans';
+    color: #58595b;
+    text-align: center;
+    text-decoration: none;
+}
+#footer > #blog a:hover{
+    text-decoration: underline;
+}
+.copyright {
+	float: left;
+    width: 100%;
+    padding: 10px 0;
+    background: url("../images/footer/border-img.jpg") center center repeat-x;
+}
+.copyright span {
+    display: table;
+    margin: 0 auto;
+    background: #f6f6f6;
+    padding: 0 20px;
+    font: 400 18px 'Open Sans';
+    color: #58595b;
+    text-align: center;
+}
+.copyright a {
+	color: #58595b;
+	text-decoration: none;
+}
+.copyright a:hover {
+	text-decoration: underline;
+}
+
+#icerik_haritasi {
+	width: 1170px;
+	padding: 8px 15px;
+	margin-top: 5px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    margin-right: auto;
+    margin-left: auto;
+    color:#F90;
+    border-bottom: solid 1px #888;
+    border-radius: 0!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+#icerik_haritasi span{
+	color:gray;
+}
+#icerik_haritasi a{
+	color:gray;
+	text-decoration: none;
+	font-weight: 700;
+}
+#icerik_haritasi a:hover{
+    color: initial;
+}
+#urun_container {
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#urun_detayi{
+	width: 100%;
+}
+#urun_detayi > #img {
+	float: left;
+    width: 49%;
+    padding-right: 15px;
+    margin-right: 5px;
+}
+#urun_detayi > #img > #img_container a img {
+	width: 100%;
+    height: 528px;
+}
+#urun_detayi > #img > #img_kucuk{
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#urun_detayi > #img > #img_kucuk > a{
+    text-decoration: none;
+}
+#urun_detayi > #img > #img_kucuk > a img{
+    max-width: 70px;
+    margin: 0 15px 0 0;
+    border: 1px solid #ddd;
+}
+#urun_detayi > #img > #ust_kategori{
+	padding-left: 0;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+#urun_detayi > #img > #ust_kategori span img{
+	float: left;
+    vertical-align: middle;
+    border: 0;
+}
+#urun_detayi > #img > #ust_kategori a{
+	color:initial;
+	font-weight: 700;
+    font-size: 12px;
+    padding-left: 15px;
+}
+#urun_detayi > #urun_info{
+    float: left;
+    width: 47%;
+    background: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 1px solid #ddd;
+}
+#urun_detayi > #urun_info > #urun_ismi{
+    margin-bottom: 10px!important;
+    background: #fff;
+    border-color: #ddd;
+    position: relative;
+}
+#urun_detayi > #urun_info > #urun_ismi h1{
+	color: #673939;
+    margin-bottom: 4px;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 23px;
+    font-weight: 300;
+}
+.star {
+	width: 20px;
+	height: 20px;
+	float: left;
+	background-image: url("../images/urun/rating_star.png");
+}
+#urun_detayi > #urun_info > #rate > #yorum_sayisi {
+	color:#5d5d5d;
+}
+#urun_detayi > #urun_info > #urun_kodu  {
+	color: #673939;
+    font-weight: 600;
+    margin-top: 7px;
+}
+#urun_detayi > #urun_info > .urun_ucret  {
+    color: #2E6DFF;
+    font-weight: 400;
+    font-size: 2.8em;
+    width: auto;
+    float: right;
+    margin-right: 15px;
+}
+#urun_detayi> #sepet_ekle {
+    display: inline-block;
+    width: 42%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 40px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color:#5d5d5d;
+    height: auto;
+}
+#urun_detayi> #sepet_ekle a > #sepete_ekle_buton{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 20px 6px;
+    background-color: #fe6500;
+    border-color: #fe6500;
+    text-align: center;
+}
+#urun_detayi> #sepet_ekle  a {
+    font-size: 140%;
+    line-height: 1.33;
+    height: auto;
+    color:white;
+}
+#urun_detayi> #sepet_ekle  a > #sepete_ekle_buton img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#urun_detayi> #sepet_ekle > #sepet_info {
+    padding: 0 0 10px;
+    margin-top: 20px;
+}
+#urun_detayi> #sepet_ekle > #sepet_info b{
+    font-weight: 700;
+}
+#urun_detayi> #sepet_ekle > #sepet_info img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#urun_detayi> #sepet_ekle > #teslimat_secenekleri {
+    background: #fff;
+    font-size: 16px;
+    color: #575757;
+    font-weight: 200;
+    position: relative;
+    line-height: normal;
+    width: 100%;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+}
+
+#urun_detayi> #sepet_ekle > #teslimat_secenekleri img{
+	vertical-align: middle;
+	margin-left: 5px;
+}
+#urun_detayi> #sepet_ekle > #teslimat_secenekleri_liste {
+	display: none;
+	margin-top: 15px;
+}
+#urun_detayi> #sepet_ekle > #teslimat_secenekleri_liste ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#urun_detayi> #sepet_ekle > #teslimat_secenekleri_liste ul li{
+	color: #575757;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 12px 26px;
+    line-height: 22px;
+    background: url(../images/urun/guvenli.png) no-repeat 0 1px;
+}
+#urun_detayi> #urun_ozellikleri{
+	display: inline-block;
+    width: 47%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    color:#5d5d5d;
+    height: auto;
+
+}
+#yorumlar {
+	width: 75%;
+	height: auto;
+	background: #fff;
+	border: 1px solid #ddd;
+	color:#5d5d5d;
+	padding: 0px 25px;
+}
+#yorumlar > h3 {
+	font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+#yorumlar > .yorum {
+	width: 100%;
+	height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+#yorumlar > .yorum > .yorum_ismi {
+	color: #535353;
+    font-size: 14px;
+    float: left;
+    font-weight: 600;
+}
+#yorumlar > .yorum > .urune_puani{
+	float: right;
+}
+#yorumlar > .yorum > .yorum_baslik{
+	color: #e77c48;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#yorumlar > .yorum > .yorum_icerik{
+
+}
+#yorumlar > .yorum > .yorum_tarih{
+	width: 50%;
+	text-align: right;
+	margin-bottom: 7px;
+    float: right;
+    margin-top: 15px;
+}
+.begeni{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    float: left;
+}
+.begeni a{
+    color:#e77c48;
+}
+.sayac{
+    text-align: left;
+    cursor: pointer;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color: #e77c48;
+
+}
+.sayac:hover{
+    text-decoration: underline;
+
+}
+.sayac img{
+    vertical-align: middle;
+    margin-right: 3px;
+    
+}
+.kimler_begenmis{
+    position: absolute;
+    display: none;
+    z-index: 999999;
+    background: #f6f6f6;
+}
+.sayac:hover .kimler_begenmis{
+    display: block;
+}
+.kimler_begenmis ul{
+    margin: 10px 15px 10px 15px;
+    padding: 0;
+    list-style-type: none;
+}
+.kimler_begenmis ul li {
+    
+}
+#yorumlar > #yorum_yap {
+	width: auto;
+	height: auto;
+	background: white;
+	border: 1px solid #ddd;
+	color: #428bca;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#yorumlar > #yorum_ekrani {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 50%; 
+    height: auto;
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.yorum_textbox{
+	padding: 6px;
+	outline:none;
+	color: #5d5d5d;
+	width: 200px;
+	margin: 5px;
+	border:1px solid #ddd;
+	border-radius: 5px;
+}
+#yorumlar > #yorum_ekrani form span{
+	padding: 5px;
+	color: #5d5d5d;
+	margin: 5px;
+}
+#yorumlar > #yorum_ekrani form input[type="number"]{
+	padding: 5px;
+	outline:none;
+	color: #5d5d5d;
+	border:1px solid #ddd;
+	margin: 5px;
+	border-radius: 5px
+}
+#yorumlar > #yorum_ekrani form textarea{
+	width: 95%;
+	height: 100px;
+	margin: 10px;
+	outline:none;
+	color: #5d5d5d;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	padding:5px;
+	resize:none;
+}
+#yorumlar > #yorum_ekrani form input[type = "submit"]{
+	width: auto;
+	height: auto;
+	background: white;
+	border: 1px solid #ddd;
+	color: #428bca;
+    border-radius: 5px;
+    padding: 6px 12px;
+    text-align: center;
+    margin: 10px;
+}
+#yorumlar > .yorum > .yanit_yorum{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+#yorumlar > .yorum > .yanit_yorum  form textarea{
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+	width: 90%;
+	height: 50px;
+	resize: none;
+	outline: none;
+	color:#5d5d5d;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	float: left;
+	padding: 5px;
+}
+#yorumlar > .yorum > .yanit_yorum  form input[type = "submit"]{
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+	width: 10%;
+	height: 50px;
+	border:1px solid #ddd;
+	border-radius: 5px;
+}
+#yorumlar > .yorum > .cevap{
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+	width: 95%;
+	margin-left: 5%;
+	height: auto;
+	padding: 10px;
+	border-top: 1px solid #ddd;
+
+}
+#yorumlar > .yorum > .cevap > .cevap_isim{
+	font-weight: bold;
+	float: left;
+	margin-right: 5px;
+}
+#yorumlar > .yorum > .cevap > .cevap_icerik{
+}
+#yorumlar > .yorum > .cevap > .cevap_tarih{
+    text-align: right;
+    margin-top: 19px;
+    margin-bottom: 5px;
+    float: right;
+}
+.sayfalama {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.sayfalama > a {
+    line-height: 2;
+    padding: 6px 12px;
+    color: #428bca;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 3px;
+    border-radius: 5px;
+}
+.sepet_header{
+    width: 100%;
+    background: #e0e0e1;
+    padding: 10px 0;
+}
+.sepet_header_ic{
+    width: 1170px;
+    margin:0 auto;
+}
+.sepet_logo{
+    width: 171px;
+    height: 40px;
+    margin:  0 auto;
+    background: url("../images/header/logo.png");
+}
+.sepet_footer{
+    width: 1170px;
+    margin: 80px auto;
+    font: 400 18px 'Open Sans';
+}
+.sepet_content {
+    width: 1170px;
+    margin: 30px auto;
+
+}
+.sepet_urun {
+    width: 72%;
+    float: left;
+    height: 150px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.sepet_siparis_ozet{
+    width: 25%;
+    float: right;
+    height: 150px;
+}
+.sepet_urun_fotograf{
+    width: 16.5%;
+    float: left;
+    height: 150px;
+}
+.sepet_urun_fotograf img{
+    width: 135px;
+    height: inherit;
+}
+.sepet_urun_detayları{
+    width: 83.5%;
+    float: left;
+    height: 150px;
+}
+.sepet_urun_isim{
+    width: 89%;
+    background-color: #f2f2f2;
+    float: left;
+    padding: 8px 15px;
+}
+.sepet_urun_isim a{
+    color: #777;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.sepet_urun_cikart{
+    width: 3%;
+    float: left;
+    background-color: #f2f2f2;
+    padding: 8px 13px;
+}
+.sepet_urun_cikart a{
+    color: #777;
+    font-size: 14px;
+    font-weight: 700;
+}
+.sepet_urun_adet{
+    margin-top: 50px;
+    margin-left: 500px;
+    float: left;
+}
+.tutar{
+    margin-top: 50px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #777;
+    font-weight: bold;
+    float: right;
+}
+.sepet_urun_adet select{
+    border: 1px solid #CCC;
+    padding: 5px;
+    width: 46px;
+    font-size: 14px;
+    height: 30px;
+    outline: none;
+}
+.sepet_siparis_ozet_baslik{
+    background-color: #ff7f00;
+    font-size: 21px;
+    color: #FFF;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.sepet_siparis_ozet_detay{
+    border: 1px solid #ddd;
+    border-top: 0;
+    padding: 15px 15px 0;
+    background: #fff;
+    margin-bottom: 50px;
+}
+.sepet_siparis_ozet_detay h4{
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #777;
+    font-weight: 600;
+    line-height: 25px;
+}
+.sepet_siparis_ozet_detay ul {
+    padding-top: 15px;
+    font-size: 12px;
+    color: #343437;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    margin:0;
+    padding: 15px 0 0 0;
+}
+.sepet_siparis_ozet_detay ul li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.sepet_siparis_ozet_detay ul li b{
+    display: block;
+    margin-bottom: 5px;
+}
+.sepet_siparis_ozet_detay ul li span{
+    float: left;
+    width: 50%;
+}
+.sepet_siparis_ozet_detay ul li span:last-child {
+    text-align: right;
+}
+.sepet_siparis_ozet_detay ul li:last-child {
+    font-size: 14px;
+    color: #343437;
+    font-weight: 700;
+}
+.teslimat_bilgileri {
+    width: 67%;
+    background-color: #f6f6f6;
+    border: solid 1px #e8e8e8;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.teslimat_baslik{
+    padding: 0;
+    margin: 8px 0;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #ff6600;
+    color: #ff6600;;
+}
+.teslimat_bilgileri .form_elamanlari{
+    width: 49%;
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    float: left;    
+}
+.teslimat_bilgileri input[type="checkbox"]{
+    vertical-align: middle;
+    line-height: 20px;
+    height: 20px;
+    width: 17px;
+    background: #fff;
+    border:1px solid gray;
+}
+.teslimat_bilgileri input[type="submit"]{
+    padding: 20px 6px;
+    font-size: 140%;
+    height: auto;
+    border:1px solid #fe6500;
+    background-color: #fe6500;
+    color: white;
+    float: right;
+}
+.satin_al {
+    width: 25%;
+    float: right;
+    font: 600 20px/20px "open sans";
+    color: #fff;
+    text-align: center;
+    background: #fe6500;
+    padding: 15px 0;
+    margin-top: 26px;
+}
+.alisverise_devam {
+    width: 15%;
+    float: left;
+    border: 1px solid #ddd;
+    background: #fcfcfc;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #777;
+    margin-top: 26px;
+    padding: 10px 10px;
+}
+.genel_toplam{
+    float: left;
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;  
+    color: #666;
+    margin-left: 30%;
+}
+div h3 {
+    font-weight: 400;
+    color: #F90;
+}
+div p {
+    font-family: 'Open Sans',"Times New Roman",Times,serif;
+    padding: 10px 0;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-style: oblique;
+}
+.alisveris{
+    width: 20%;
+    padding: 20px;
+    font-size: 24px;
+    line-height: 1.33;
+    height: auto;
+    border : 1px solid gray;
+    margin : 0 auto;
+}
+a {
+    color: #666;
+}
+#odeme_giris {
+    display: none;
+    position: absolute;
+    top:10%;
+}
+.kategori_content {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+}
+.filtreleme {
+    width: 100%;
+    margin-top : 40px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-color: #ddd;
+    padding: 5px;
+}
+.filtreleme span {
+    margin-left: 15px;
+    color: #575757;
+    font-size: 15px;
+}
+.filtreleme h1 {
+    width: 100%;
+    text-align: center;
+    color: #575757;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.filtrelemeler {
+    text-align: center;
+}
+.filtrelemeler form {
+    display: inline-block;
+}
+.filtrelemeler form select {
+    font-size: 14px;
+    font-weight: 600;
+    color: #575757;
+    line-height: 32px;
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 20px 5px 5px;
+    border: 1px solid #ddd;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+}
+.filtrelemeler input[type="submit"] {
+    border:1px solid #ddd;
+    background: #fff;
+    color: #fe6500;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor: pointer;
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+.filtrelenen_urunler {
+    margin-top: 50px;
+}
+.profil_content {
+    width: 1170px;
+    margin: 50px auto;
+}
+.profil_foto img{
+    width: 300px;
+    border-radius: 150px;
+    height: 300px;
+    float: left;
+    margin-right: 150px;
+    margin-bottom: 50px;    
+
+}
+.profil_detay {
+    color : #575757 ;
+    margin: 20px 0;
+}
+.secimler{
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+    margin-right: 10px;
+}
+.secimler span{
+    color:#fe6500;
+}
+.ara_content {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+.admin_header {
+    width: 100%;
+    background: #e0e0e1;
+}
+.admin_header_content {
+    width: 1170px;
+    margin: 0 auto;
+     height: auto;
+     padding: 15px;
+}
+.admin_header_alt_ic ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+       
+}
+.admin_header_alt_ic li{
+    list-style-type: none;
+    display: inline-block;
+    background: #575757 ;
+}
+.admin_header_alt_ic li:hover{
+    background: white
+}
+.admin_header_alt_ic li>a {
+    color:white;
+    padding: 8px 20px;
+    display: block;
+}
+.admin_header_alt_ic ul li ul{
+    display: none;
+    position: absolute;
+}
+.admin_header_alt_ic ul li:hover ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.admin_header_alt_ic ul li:hover ul li{
+    display: block;
+}
+.admin_header_alt_ic li:hover>a {
+    color: #f60;
+}
+.admin_header_alt  {
+    width: 100%;
+    background: #575757 ;
+}
+.admin_header_alt_ic  {
+    width: 1170px;
+    margin: 0 auto;
+}
+.admin_content {
+    width: 1170px;
+    margin: 15px auto;
+}
+.admin_content table td {
+    border:1px solid gray;
+}
+.admin_content form input[type="text"] {
+    padding: 3px 5px ;
+    outline: none;
+    color:#575757;
+    display: block;
+    margin: 5px;
+}
+.admin_content form input[type="file"] {
+    color:#575757;
+    display: block;
+    margin: 5px;
+    float: left;
+}
+.admin_content form label {
+    color:#575757;
+    float: left;
+    margin: 5px;
+}
+.admin_content form select {
+    color:#575757;
+    display: block;
+    margin: 2px 5px 5px 5px;
+    padding: 5px;
+    outline: none;
+}
+.admin_content form textarea {
+    width: 250px;
+    height: 70px;
+    margin: 5px;
+    outline: none;
+}
+.admin_content form input[type="submit"] {
+    width: 80px;
+    outline: none;
+    background:#fe6500;
+    padding: 8px;
+    border: 0px ;
+    display: block;
+    margin: 5px;
+    color:white;
+}
+.admin_content form input[type="number"] {
+    width: 60px;
+    outline: none;
+    margin: 2px 5px 5px 5px;
+    padding: 5px;
+}
+li.hesap {
+    text-align: right;
+    float: right;
+}
+li.hesap >ul > li {
+    width: 100%;
+    padding-left: 4px; 
+    padding-right: 5px; 
+    text-align: center;
+}
